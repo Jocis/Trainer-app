@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="PratimuKatalogasLINQ">
+  <DataContextMoniker Name="/PratimuKatalogasLINQDataContext" />
+  <nestedChildShapes>
+    <classShape Id="8be1f094-129d-45d7-8a8d-bfaac643ed7b" absoluteBounds="2.375, 4.375, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/PratimuKatalogasLINQDataContext/DienosPlana" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2b064c79-5df6-4495-bbf4-19fffea8e13d" absoluteBounds="2.3900000000000006, 4.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9586f94c-3cf8-4f6c-823b-edb47bee4339" absoluteBounds="0.625, 0.875, 2, 2.5401025390625">
+      <DataClassMoniker Name="/PratimuKatalogasLINQDataContext/PratimaiTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="25a61078-95b1-447e-a76e-0ffc79175ee6" absoluteBounds="0.64, 1.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ecf42842-4e3e-492d-824f-5314a88289dd" absoluteBounds="3.375, 0.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/PratimuKatalogasLINQDataContext/RaumenuGrupe" />
+      <nestedChildShapes>
+        <elementListCompartment Id="037111bc-d535-4715-bb68-ae607f54722e" absoluteBounds="3.3899999999999997, 0.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.375 : 1.47679768880208); (2.625 : 1.47679768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PratimuKatalogasLINQDataContext/RaumenuGrupe/RaumenuGrupe_PratimaiTable" />
+      <nodes>
+        <classShapeMoniker Id="ecf42842-4e3e-492d-824f-5314a88289dd" />
+        <classShapeMoniker Id="9586f94c-3cf8-4f6c-823b-edb47bee4339" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="0197dbf1-b2a2-47ff-9d98-18e40376ff39" absoluteBounds="6, 0.625, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/PratimuKatalogasLINQDataContext/Table" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ae5cb8d6-2749-4cae-a670-2124b90efb04" absoluteBounds="6.0150000000000006, 1.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6 : 1.22199625651042); (5.375 : 1.22199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PratimuKatalogasLINQDataContext/Table/Table_RaumenuGrupe" />
+      <nodes>
+        <classShapeMoniker Id="0197dbf1-b2a2-47ff-9d98-18e40376ff39" />
+        <classShapeMoniker Id="ecf42842-4e3e-492d-824f-5314a88289dd" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e4323d06-21ea-44be-95ac-3c4d71596fcb" absoluteBounds="6, 3.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/PratimuKatalogasLINQDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3265f3ae-a5b5-44cd-a63b-465581f60fa4" absoluteBounds="6.015, 3.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7 : 3.5); (7 : 1.81899251302083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PratimuKatalogasLINQDataContext/User/User_Table" />
+      <nodes>
+        <classShapeMoniker Id="e4323d06-21ea-44be-95ac-3c4d71596fcb" />
+        <classShapeMoniker Id="0197dbf1-b2a2-47ff-9d98-18e40376ff39" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
